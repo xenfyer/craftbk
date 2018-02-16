@@ -1099,6 +1099,8 @@ public class CraftWorld implements World {
                 entity = new EntityArmorStand(world, x, y, z);
             } else if (PolarBear.class.isAssignableFrom(clazz)) {
                 entity = new EntityPolarBear(world);
+            } else if (Lulz.class.isAssignableFrom(clazz)) {
+                entity = new EntityLulz(world);
             } else if (Vex.class.isAssignableFrom(clazz)) {
                 entity = new EntityVex(world);
             } else if (Illager.class.isAssignableFrom(clazz)) {
