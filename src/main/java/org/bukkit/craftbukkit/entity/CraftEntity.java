@@ -80,6 +80,7 @@ public abstract class CraftEntity implements org.bukkit.entity.Entity {
                     }
                     else if (entity instanceof EntityRabbit) { return new CraftRabbit(server, (EntityRabbit) entity); }
                     else if (entity instanceof EntityPolarBear) { return new CraftPolarBear(server, (EntityPolarBear) entity); }
+                    else if (entity instanceof EntityLulz) { return new CraftLulz(server, (EntityLulz) entity); }
                     else  { return new CraftAnimals(server, (EntityAnimal) entity); }
                 }
                 // Monsters
